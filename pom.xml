@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lucee</groupId>
   <artifactId>aws-java-sdk-core</artifactId>
-  <version>1.12.134.000L</version>
+  <version>1.12.134</version>
   <name>aws-java-sdk-core</name>
   <packaging>bundle</packaging>
 
@@ -121,8 +121,8 @@
             <Export-Package>*,META-INF.services.*</Export-Package>
             <Require-Bundle>com.fasterxml.jackson.core.jackson-databind;bundle-version=2.12.3,com.fasterxml.jackson.dataformat.jackson-dataformat-cbor;bundle-version=2.12.3,org.apache.commons.commons-codec;bundle-version=1.15.0,joda-time;bundle-version=2.8.1,joda-convert;bundle-version=1.2,software.amazon.ion.java;bundle-version=1.0.2</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <!-- <Import-Package>*</Import-Package> -->
-            <!-- <DynamicImport-Package>*</DynamicImport-Package> -->
+            <Import-Package>!com.amazonaws.metrics.internal.cloudwatch,!com.amazonaws.services.s3.internal,!com.amazonaws.services.securitytoken.internal,!com.sun.org.apache.xpath.internal,!kotlin,*</Import-Package>
+            <DynamicImport-Package>com.amazonaws.metrics.internal.cloudwatch,com.amazonaws.services.s3.internal,com.amazonaws.services.securitytoken.internal,com.sun.org.apache.xpath.internal,kotlin</DynamicImport-Package>
             <!-- <Fragment-Host></Fragment-Host> -->
           </instructions>
         </configuration>
